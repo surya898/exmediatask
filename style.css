@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #f3f0f0;
+    overflow-x: hidden; 
+}
+
 .navbar.sticky {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .main-item {
@@ -12,33 +29,33 @@
 }
 
 .main-heading {
-  
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%; 
+    width: 100%;
     animation: fadeInUp 1.5s ease-in-out;
 }
+
 @keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: center(30px);
-  }
-  to {
-      opacity: 1;
-      transform: center(0);
-  }
+    from {
+        opacity: 0;
+        transform: center(30px);
+    }
+    to {
+        opacity: 1;
+        transform: center(0);
+    }
 }
 
 .main-heading h1 {
-  font-size: 36px;
-  font-weight: 700; 
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .main-heading p {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 .main-heading a {
@@ -51,120 +68,120 @@
     font-size: 1.2rem;
 }
 
-
 @media (max-width: 767px) {
     .main-heading h1 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .main-heading p {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .main-heading a {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
+
 .glassy {
-    background: rgba(152, 50, 50, 0.2); 
+    background: rgba(152, 50, 50, 0.2);
     backdrop-filter: blur(10px);
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     color: rgb(7, 7, 7);
     text-align: center;
 }
-.containerss{
-    width: 100%
-}
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body{
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  background: #f3f0f0;
-}
-.wrapper{
-  display: grid;
-  margin: 200px 90px auto;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-@media (max-width: 700px) {
-  .wrapper{
-    margin: 200px auto;
-  }
-}
-.wrapper .box{
-  width: 350px;
-  margin: 0 auto;
-  position: relative;
-  perspective: 1000px;
-}
-.wrapper .box .front-face{
-  background: #fff;
-  height: 220px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
-  transition: all 0.5s ease;
-}
-.box .front-face .icon{
-  height: 80px;
-}
-.box .front-face .icon i{
-  font-size: 65px;
-}
-.box .front-face span,
-.box .back-face span{
-  font-size: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
+
+.containerss {
+    width: 100%;
 }
 
-.box .back-face{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 220px;
-  width: 100%;
-  padding: 30px;
-  color: #fff;
-  opacity: 0;
-  transform-style: preserve-3d;
-  
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
-  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
-  transition: all 0.5s ease;
+.wrapper {
+    display: grid;
+    margin: 200px 20px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-.box .back-face p{
-  margin-top: 10px;
-  text-align: justify;
+
+@media (max-width: 700px) {
+    .wrapper {
+        margin: 100px auto; 
+    }
 }
-.box:hover .back-face{
-  opacity: 1;
-  transform: rotateX(0deg);
+
+.wrapper .box {
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
 }
-.box:hover .front-face{
-  opacity: 0;
-  transform: translateY(-110px) rotateX(90deg);
+
+.wrapper .box .front-face {
+    background: #fff;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    transition: all 0.5s ease;
 }
+
+.box .front-face .icon {
+    height: 80px;
+}
+
+.box .front-face .icon i {
+    font-size: 65px;
+}
+
+.box .front-face span,
+.box .back-face span {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 220px;
+    width: 100%;
+    padding: 30px;
+    color: #fff;
+    opacity: 0;
+    transform-style: preserve-3d;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    transition: all 0.5s ease;
+}
+
+.box .back-face p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box:hover .back-face {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.box:hover .front-face {
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+
 .back-face {
     position: relative;
     overflow: auto;
-    height: 200px; 
+    height: 200px;
 }
+
 .exmedia-section {
-    width: 80%;
+    width: 100%;
+    max-width: 100%;
     margin: 50px auto;
     text-align: center;
     padding: 40px;
@@ -183,7 +200,8 @@ body{
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-.intro, .description {
+.intro,
+.description {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 15px;
@@ -202,35 +220,34 @@ body{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 2000px) {
     .exmedia-section {
-        width: 90%;
+        width: 100%;
         padding: 20px;
     }
-    .headline {
-        font-size: 1.8rem;
-    }
-    .intro, .description {
-        font-size: 1rem;
-    }
 }
-.cards{
+
+.cards {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
     padding: 30px;
-  }
-  .cards h2.header{
+}
+
+.cards h2.header {
     font-size: 40px;
     margin: 0 0 30px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-  .services{
+}
+
+.services {
     display: flex;
     align-items: center;
-  }
-  .content{
+    flex-wrap: wrap;
+}
+
+.content {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -239,53 +256,67 @@ body{
     border: 2px solid black;
     border-radius: 4px;
     transition: all .3s ease;
-  }
-  .content .fab{
+    box-sizing: border-box; 
+}
+
+.content .fab {
     font-size: 70px;
     margin: 16px 0;
-  }
-  .content > *{
+}
+
+.content > * {
     flex: 1 1 100%;
-  }
-  .content:hover{
+}
+
+.content:hover {
     color: white;
-  }
-  .content:hover a{
+}
+
+.content:hover a {
     border-color: white;
     background: white;
-  }
-  .content-1:hover{
+}
+
+.content-1:hover {
     border-color: #E1306C;
     background: #E1306C;
-  }
-  .content-1:hover a{
+}
+
+.content-1:hover a {
     color: #1DA1F2;
-  }
-  .content-2:hover{
+}
+
+.content-2:hover {
     border-color: #E1306C;
     background: #E1306C;
-  }
-  .content-2:hover a{
+}
+
+.content-2:hover a {
     color: #E1306C;
-  }
-  .content-3:hover{
+}
+
+.content-3:hover {
     border-color: #E1306C;
     background: #E1306C;
-  }
-  .content-3:hover a{
+}
+
+.content-3:hover a {
     color: #ff0000;
-  }
-  .content h2{
+}
+
+.content h2 {
     font-size: 30px;
     margin: 16px 0;
     letter-spacing: 1px;
     text-transform: uppercase;
-  }
-  .content p{
+}
+
+.content p {
     font-size: 17px;
-    font-family: 'Poppins',sans-serif;
-  }
-  .content a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.content a {
     margin: 22px 0;
     background: black;
     color: white;
@@ -295,23 +326,18 @@ body{
     padding: 15px 0;
     border-radius: 25px;
     transition: .3s ease;
-  }
-  .content a:hover{
+}
+
+.content a:hover {
     border-radius: 4px;
-  }
-  @media (max-width: 900px) {
-    .services{
-      display: flex;
-      flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    .services {
+        flex-direction: column; 
     }
-  }
 
-
-
-
-
-
-
-
-
-
+    .content {
+        width: 100%; 
+    }
+}

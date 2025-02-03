@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 </head>
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark sticky">            
-            <h1 class="fw-bold text-white m-0">EX<span class="text-white">media</span></h1>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/exLogos.png" alt="EXmedia Logo" style="border-radius: 50%; width: 50px; height: 50px;">                  
-                </a>
-                <div class="navbar-nav ms-auto p-4 p-lg-0 d-flex justify-content-center align-items-center w-100">
-                    <a href="#carousel slide" class="nav-item nav-link active">HOME</a>
-                    <a href="#services" class="nav-item nav-link active">SERVICES</a>
-                    <a href="#deliverables" class="nav-item nav-link active">DELIVERABLES</a>
-                    <a href="#about" class="nav-item nav-link active">ABOUT</a>
-                    <a href="#contact" class="nav-item nav-link active">CONTACT US</a>
-                    <a class="text-white-50 ms-3" href="https://www.facebook.com/exmedia"><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white-50 ms-3" href="https://www.linkedin.com/company/exmedia1/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
-                    <a class="text-white-50 ms-3" href="https://x.com/i/flow/login?redirect_after_login=%2Fexmedia_1"><i class="fab fa-x-twitter"></i></a>
-                    <a class="text-white-50 ms-3" href="https://www.youtube.com/@exmedia-"> <i class="fab fa-youtube"></i></a>
-                    <a class="text-white-50 ms-3" href="https://www.instagram.com/exmedia_1/"><i class="fab fa-instagram"></i></a>
-                    <a class="text-white-50 ms-3" href="https://www.threads.net/@exmedia_1"><i class="fas fa-at"></i></a>
-
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">EX<span class="text-dark">media</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a class="navbar-brand" href="#">
+              <img src="./images/exLogos.png" alt="EXmedia Logo" style="border-radius: 50%; width: 50px; height: 50px;">
+            </a>
+            <div class="navbar-nav ms-auto p-2">
+              <a class="nav-link active" href="#carousel slide">HOME</a>
+              <a class="nav-link active" href="#services">SERVICES</a>
+              <a class="nav-link active" href="#deliverables">DELIVERABLES</a>
+              <a class="nav-link active" href="#about">ABOUT</a>
+              <a class="nav-link active" href="#contact">CONTACT US</a>
+              <a class="nav-link active" href="https://www.facebook.com/exmedia"><i class="fab fa-facebook-f"></i></a>
+              <a class="nav-link active" href="https://www.linkedin.com/company/exmedia1/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
+              <a class="nav-link active" href="https://x.com/i/flow/login?redirect_after_login=%2Fexmedia_1"><i class="fab fa-x-twitter"></i></a>
+              <a class="nav-link active" href="https://www.youtube.com/@exmedia-"><i class="fab fa-youtube"></i></a>
+              <a class="nav-link active" href="https://www.instagram.com/exmedia_1/"><i class="fab fa-instagram"></i></a>
+              <a class="nav-link active" href="https://www.threads.net/@exmedia_1"><i class="fas fa-at"></i></a>
             </div>
-        </nav>
-    </div>
+          </div>
+        </div>
+      </nav>
+      
     
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -92,7 +96,7 @@
                 <div class="col-12 px-0">
                     <div class="video-container">
                         <a href="https://www.youtube.com/@exmedia-" target="_blank">
-                            <video class="w-100 rounded shadow" controls>
+                            <video class="w-100 rounded shadow" controls id="exmedia-video">
                                 <source src="./video/add.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
