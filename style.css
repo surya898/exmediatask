@@ -12,7 +12,7 @@ body {
     width: 100%;
     text-align: center;
     background: #f3f0f0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .navbar.sticky {
@@ -98,19 +98,22 @@ body {
 
 .wrapper {
     display: grid;
-    margin: 200px 20px auto;
+    margin: 0 auto;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0 10px;
 }
 
 @media (max-width: 700px) {
     .wrapper {
-        margin: 100px auto; 
+        width: 100%;
+        margin: 100px auto;
     }
 }
 
 .wrapper .box {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     margin: 0 auto;
     position: relative;
     perspective: 1000px;
@@ -245,18 +248,21 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    margin: 20px;
-    padding: 20px;
+    margin: 0;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 4px;
     transition: all .3s ease;
-    box-sizing: border-box; 
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
 }
 
 .content .fab {
@@ -334,10 +340,11 @@ body {
 
 @media (max-width: 900px) {
     .services {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .content {
-        width: 100%; 
+        width: 100%;
+        margin: 10px;
     }
 }
